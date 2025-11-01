@@ -1,10 +1,11 @@
 ---
-title: About
+title: Research Overview
 layout: default
-nav_order: 1
+has_children: true
+nav_order: 2
 ---
 
-# Test Second Page
+# Test Research Overview
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur lectus ante, a mollis enim auctor at. Duis sit amet dui ac metus pellentesque dictum eu vitae lectus. Etiam quam dolor, ullamcorper a turpis id, tincidunt pretium velit. Ut ultrices at leo sed pulvinar. Fusce enim lacus, tempus ut dapibus a, luctus in est. In ornare augue libero, ac venenatis felis mattis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 

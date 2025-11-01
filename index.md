@@ -1,5 +1,7 @@
 ---
 title: Home
+layout: Home
+nav_order: 0
 ---
 
 # Test Page Layout

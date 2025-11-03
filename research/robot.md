@@ -17,8 +17,8 @@ The UR5e's technical specifications are listed in the UR5e user manual.[^2]
 | **Robot weight** | 20.7 kg / 45.7 lb |
 | **Maximum payload** | 5 kg / 11 lb |
 | **Reach** | 850 mm / 33.5 in |
-| **Joint ranges** | Unlimited rotation of tool flange, ±360° for all other joints/s;±360° for all joints |
-| **Speed** | Joints: Max 180°/s;Tool: Approx. 1 m/s / Approx. 39.4 in/s |
+| **Joint ranges** | Unlimited rotation of tool flange, ±360° for all other joints; ±360° for all joints |
+| **Speed** | Joints: Max 180°/s; Tool: Approx. 1 m/s / Approx. 39.4 in/s |
 | **System update frequency** | 500 Hz |
 | **Force Torque sensor accuracy** | 4 N |
 | **Pose repeatability** | ±0.03 mm / ±0.0011 in (1.1 mils) per ISO 9283 |
@@ -32,18 +32,18 @@ The UR5e's technical specifications are listed in the UR5e user manual.[^2]
 | **Control Box I/O power supply** | 24 V 2 A in Control Box |
 | **Communication** | TCP/IP 1000 Mbit: IEEE 802.3ab, 1000BASE-T Ethernet socket, MODBUS TCP & EtherNet/IP Adapter, Profinet |
 | **Programming** | PolyScope graphical user interface on 12" touchscreen |
-| **Noise** | Robot Arm: Less than 60dB(A) Control Box: Less than 50dB(A)/s;Robot Arm: Less than 65dB(A) Control Box: Less than 50dB(A) |
+| **Noise** | Robot Arm: Less than 60dB(A) Control Box: Less than 50dB(A).; Robot Arm: Less than 65dB(A) Control Box: Less than 50dB(A) |
 | **IP classification** | IP54 |
 | **Cleanroom classification** | Robot Arm: ISO Class 5, Control Box: ISO Class 6 |
 | **Power consumption (average)** | 570 W |
-| **Power consumption (approx.)** | Approx. 250 W using a typical program |
+| **Power consumption** | Approx. 250 W using a typical program |
 | **Short-Circuit Current Rating (SCCR)** | 200A |
 | **Collaboration operation** | 17 advanced safety functions. In compliance with: EN ISO 13849-1, PLd, Cat.3 and EN ISO 10218-1 |
 | **Materials** | Aluminium, PC/ASA plastic |
-| **Ambient temperature range** | 0–50 °C. At ambient temperatures above 35°C, the robot may operate at reduced speed and performance. |
-| **Control Box power source** | 100–240 VAC, 47–440 Hz |
+| **Ambient temperature range** | 0-50 °C. At ambient temperatures above 35°C, the robot may operate at reduced speed and performance. |
+| **Control Box power source** | 100-240 VAC, 47-440 Hz |
 | **TP cable: Teach Pendant to Control Box** | 4.5 m / 177 in |
-| **Robot Cable: Robot Arm to Control Box (options)** | Standard (PVC) 6 m / 236 in × 13.4 mm/s;Standard (PVC) 12 m / 472.4 in × 13.4 mm/s;Hiflex (PUR) 6 m / 236 in × 12.1 mm/s;Hiflex (PUR) 12 m / 472.4 in × 12.1 mm |
+| **Robot Cable: Robot Arm to Control Box (options)** | Standard (PVC) 6 m/236 in × 13.4 mm; Standard (PVC) 12 m/472.4 in × 13.4 mm; Hiflex (PUR) 6 m/236 in × 12.1 mm; Hiflex (PUR) 12 m/472.4 in × 12.1 mm |
 
 ## Bibliography
 [^1]: International Federation of Robotics (IFR), Demystifying Collaborative Industrial Robots – Positioning Paper, updated December 2020. Available: https://www.automate-uk.com/media/4jmhne5p/ifrdemystifyingcollaborativerobotsupdatev03dec2020.pdf \[Accessed: 03-Nov-2025\]

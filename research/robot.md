@@ -2,11 +2,15 @@
 title: UR5e Robot Arm
 layout: default
 parent: Research Overview
+has_toc: true
 ---
 
 # Universal Robots UR5e Collaborative Industrial Robot Arm
 
 The Universal Robots UR5e is a collaborative industrial robot arm. Collaborative robots, often shorted to cobots are robots which are designed to be able to perform tasks in collaboration with workers, having a number of technical features such as lightweight materials, padding and embedded sensors to reduce the risk of harm to humans.[^1]
+
+## Table of Contents
+{:toc}
 
 ## Technical Specifications
 
@@ -55,7 +59,7 @@ The UR5e's technical specifications are listed in the UR5e user manual.[^2]
 </table>
 
 ## Safety Instructions
-**The robot comes with a set of general safety instructions, which are listed below:**
+**The robot comes with a set of general safety instructions, which are listed below:**[^3]
 
 Failure to adhere to the general safety practices, listed below, can result in
 injury or death.
@@ -214,6 +218,15 @@ power interruption.
 - Incorrect settings due to unauthorized changes to the safety configuration
 parameters.
 
+# UR5e Connection Interfaces
+In this section we will cover the robot's various hardware and firmware communication interfaces that can be used to control the robot.
+
+## Control Box I/O
+The UR5e's control box has a panel of I/O ports intended for direct wiring. These are mainly intended for connecting the robot to external industrial and safety equipment like emergency stop circuits and programmable logic controllers. They are not appropriate for connection to a microcontroller as they run at 24V whether internally or externally powered, and because of the low resolution of the connection as each port is a binary digital input/output. 
+![Local image](./media/UR5e_IO.png)
+
+
 ## Bibliography
 [^1]: International Federation of Robotics (IFR), Demystifying Collaborative Industrial Robots – Positioning Paper, updated December 2020. Available: https://www.automate-uk.com/media/4jmhne5p/ifrdemystifyingcollaborativerobotsupdatev03dec2020.pdf \[Accessed: 03-Nov-2025\]
 [^2]: Universal Robots A/S, UR5e – User Manual (Original Instructions), e-Series, 2009–2024. [Online]. Available: https://www.universal-robots.com/manuals/EN/PDF/SW5_19/user-manual-UR5e-PDF_online/710-965-00_UR5e_User_Manual_en_Global.pdf \[Accessed: 03-Nov-2025\]
+[^3]: Universal Robots A/S, UR e-Series Functional Safety 01-Dec-2022. Availlable: https://s3-eu-west-1.amazonaws.com/ur-support-site/71045/UR%20e-Series%20Functional%20Safety%202022%201201.pdf \[Accessed: 06-Nov-2025\]

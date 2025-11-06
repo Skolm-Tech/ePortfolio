@@ -30,5 +30,31 @@ Stakeholder: An individual, group of people, organisation or other entity that h
 
 - **System Disposers:** Our system is intended as a replacement of an existing system, and as such brings up numerous sustainability and environmental concerns. System disposers will want the existing system to be reused where possible to reduce waste, and will want the new system to be designed to reduce its environmental impact throughout its entire lifecycle.
 
+## Stakeholder Categorisation
+
+<table>
+<tbody>
+  <tr>
+    <td colspan="2" rowspan="2"></td>
+    <td colspan="2">Interest</td>
+  </tr>
+  <tr>
+    <td>High</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Power</td>
+    <td>High</td>
+    <td>Team Leads<br>Factory Owners<br>Labour Unions</td>
+    <td>Regulatory Authorities</td>
+  </tr>
+  <tr>
+    <td>Low</td>
+    <td>Operators<br>System Maintainers<br>Developers</td>
+    <td>Testers<br>System Disposers</td>
+  </tr>
+</tbody>
+</table>
+
 ## Bibliography
 [^1]: J. Dick, E. Hull, and K. Jackson, Requirements Engineering. Cham Springer, 2017.

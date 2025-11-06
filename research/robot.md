@@ -6,9 +6,10 @@ parent: Research Overview
 
 # Universal Robots UR5e Collaborative Industrial Robot Arm
 
-The Universal Robots UR5e is a collaborative industrial robot arm. Collaborative robots, often shorted to cobots are robots which are designed to be able to perform tasks in collaboration with workers, having a number of technical features such as lighteright materials, padding and embedded sensors to reduce the risk of harm to humans.[^1]
+The Universal Robots UR5e is a collaborative industrial robot arm. Collaborative robots, often shorted to cobots are robots which are designed to be able to perform tasks in collaboration with workers, having a number of technical features such as lightweight materials, padding and embedded sensors to reduce the risk of harm to humans.[^1]
 
 ## Technical Specifications
+
 The UR5e's technical specifications are listed in the UR5e user manual.[^2]
 
 <table>
@@ -52,6 +53,37 @@ The UR5e's technical specifications are listed in the UR5e user manual.[^2]
     <tr><td>Robot Cable: Robot Arm to Control Box (options)</td><td>Standard (PVC) 6 m / 236 in × 13.4 mm; Standard (PVC) 12 m / 472.4 in × 13.4 mm; Hiflex (PUR) 6 m / 236 in × 12.1 mm; Hiflex (PUR) 12 m / 472.4 in × 12.1 mm</td></tr>
   </tbody>
 </table>
+
+## Safety Instructions
+**The robot comes with a set of general safety instructions, which are listed below:**
+
+Failure to adhere to the general safety practices, listed below, can result in
+injury or death.
+- Verify the robot arm and tool/end effector are properly and securely
+bolted in place.
+- Verify the robot application has ample space to operate freely.
+- Verify the personnel are protected during the lifetime of the robot
+application including transport, installation, commissioning,
+programming/ teaching, operation and use, dismantling and
+disposing.
+- Verify robot safety configuration parameters are set to protect
+personnel, including those who can be within reach of the robot
+application.
+- Avoid using the robot if it is damaged.
+- Avoid wearing loose clothing or jewelry when working with the robot.
+Tie back long hair.
+- Avoid placing any fingers behind the internal cover of the Control Box.
+- Inform users of any hazardous situations and the protection that is
+provided, explain any limitations of the protection and the residual
+risks.
+- Inform users of the location of the emergency stop button(s) and how
+to activate the emergency stop in case of an emergency or an
+abnormal situation.
+- Warn people to keep outside the reach of the robot, including when
+the robot application is about to start-up.
+- Be aware of robot orientation to understand the direction of movement
+when using the Teach Pendant.
+- Adhere to the requirements and guidance in ISO 10218-2.
 
 ## Bibliography
 [^1]: International Federation of Robotics (IFR), Demystifying Collaborative Industrial Robots – Positioning Paper, updated December 2020. Available: https://www.automate-uk.com/media/4jmhne5p/ifrdemystifyingcollaborativerobotsupdatev03dec2020.pdf \[Accessed: 03-Nov-2025\]

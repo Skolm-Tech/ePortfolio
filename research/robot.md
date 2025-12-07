@@ -5,6 +5,9 @@ parent: Research Overview
 has_toc: true
 ---
 
+> **Important:** The robot listed on this page is the robot we expect this system to be using in production. Testing will be done on a UR5 CB3, which is an older version of the UR5e with minor differences.
+{: .important }
+
 # Universal Robots UR5e Collaborative Industrial Robot Arm
 
 The Universal Robots UR5e is a collaborative industrial robot arm. Collaborative robots, often shorted to cobots are robots which are designed to be able to perform tasks in collaboration with workers, having a number of technical features such as lightweight materials, padding and embedded sensors to reduce the risk of harm to humans.[^1]
@@ -225,6 +228,17 @@ In this section we will cover the robot's various hardware and firmware communic
 The UR5e's control box has a panel of I/O ports intended for direct wiring. These are mainly intended for connecting the robot to external industrial and safety equipment like emergency stop circuits and programmable logic controllers. They are not appropriate for connection to a microcontroller as they run at 24V whether internally or externally powered, and because of the low resolution of the connection as each port is a binary digital input/output. 
 ![Local image](./media/UR5e_IO.png)
 
+## 8P8C Port (Ethernet)
+
+The UR5e also has an 8P8C port used for Ethernet connection. This connection also supports some industrial protocols like MODBUS TCP, Profinet and OPC UA.
+
+### Industrial Protocols
+
+While the robot supports multiple industrial protocols such as Modbus TCP, Profinet and OPC UA, the way these interface with the robot is fundamentally similar. The protocols can each read and write values to a set of registers that are shared between the industrial controller and the robot's internal controller. The robot's internal programming then determines how the system responds to the values set in these registers. As such none of these systems can fully remote control the robot, and can be compared to the robot's native RTDE interface that provides access to the same registers.
+
+### Client Interfaces
+
+The robot also exposes a series of interfaces that can be connected to directly using server sockets. These are the primary and secondary interfaces as well as the real time data exchange (RTDE) interface which replaces the older deprecated real-time interface, all of which handle data exchange via registers. The robot can also be controlled through the dashboard server socket, as well as the URScript interpreter socket. There are also even more socket that haven't been considered here.
 
 ## Bibliography
 [^1]: International Federation of Robotics (IFR), Demystifying Collaborative Industrial Robots – Positioning Paper, updated December 2020. Available: https://www.automate-uk.com/media/4jmhne5p/ifrdemystifyingcollaborativerobotsupdatev03dec2020.pdf \[Accessed: 03-Nov-2025\]

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Development Progress
-parent: Development
+title: Scanner Progress
+parent: Development Overview
 has_toc: true
 ---
 

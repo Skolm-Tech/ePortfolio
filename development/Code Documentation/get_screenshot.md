@@ -1,3 +1,10 @@
+---
+title: Screenshot Acquisition Documentation
+layout: default
+parent: Development Overview
+has_toc: true
+---
+
 # get_screenshot.py Documentation
 
 **Class:** <br>

@@ -1,3 +1,10 @@
+---
+title: Dot Detection Code Documentation
+layout: default
+parent: Development Overview
+has_toc: true
+---
+
 # dot_detection.py Documentation
 
 **Class:** <br>

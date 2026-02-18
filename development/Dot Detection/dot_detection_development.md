@@ -1,3 +1,10 @@
+---
+title: Dot Detection Development
+layout: default
+parent: Development Overview
+has_toc: true
+---
+
 # Dot Detection Development
 ## Introduction
 The dot detection program is part of the image processing section of the project. It is used to identify the location of dots between two images to allow for the trajectory generation program to localise. The program is split into two sections: dot identification, which is used to locate the dots, and dot tracking, which is used to match dots across multiple images. The code is set up within a class allowing variables to be saved internally and the easy calling of functions. A description of the variables and functions can be found here [Dot Detection Code](./dot_detection_documentation.md).

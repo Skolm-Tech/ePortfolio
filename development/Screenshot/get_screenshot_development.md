@@ -1,3 +1,10 @@
+---
+title: Screenshot and System Error Development
+layout: default
+parent: Development Overview
+has_toc: true
+---
+
 # Screenshot and System Error Development
 ## Introduction
 This section of the code looks to ensure the system can respond to errors arising from the Einscan software and capture the screenshot required for the image processing. The code is setup within a class that the main program can call upon. The warnings are indicated using boolean variables which act as flags for each error type. A detailed breakdown of the code can be found at [Screenshot and System Error Documentation](./get_screenshot_documentation.md). The screenshot is returned as a numpy array as this is an easily passable type that the OpenCV library can interpret.

@@ -1,7 +1,7 @@
 ---
 title: Research for the missing region detection
 layout: default
-parent: Research Overview
+parent: Development Overview
 has_toc: true
 ---
 
@@ -23,7 +23,7 @@ HSV solves this by separating colour into three independent components:
 - **Saturation** — how washed out the colour is
 - **Value** — how bright or dark the colour is
 
-This means a specific hue can be isolated regardless of lighting conditions, making HSV more robust[^1][^2].
+This means a specific hue can be isolated regardless of lighting conditions, making HSV more robust[^1] [^2].
 
 ---
 
@@ -39,7 +39,7 @@ In OpenCV this is applied with:
 blurred = cv2.GaussianBlur(blue_mask, (31, 31), 0)
 ```
 
-The `(31, 31)` parameter is the kernel size. This means a 31×31 pixel area is considered for each pixel [^1][^3].
+The `(31, 31)` parameter is the kernel size. This means a 31×31 pixel area is considered for each pixel [^1] [^3].
 
 ### Why blur before thresholding?
 
@@ -47,7 +47,7 @@ The raw binary mask from `inRange` is noisy, small spreads of blue appear in reg
 
 ### What is Thresholding?
 
-Thresholding converts a grayscale image into a binary (black/white) image by comparing each pixel value against a cutoff [^1][^4]. Pixels above the threshold are set to one value and pixels below are set to another.
+Thresholding converts a grayscale image into a binary (black/white) image by comparing each pixel value against a cutoff [^1] [^4]. Pixels above the threshold are set to one value and pixels below are set to another.
 
 ```python
 good_mask = blurred > thresh
@@ -62,7 +62,7 @@ After blurring, the pixel intensity at any given point reflects how densely blue
 
 ### What are Contours?
 
-A contour is the boundary of a connected region in a binary image this is essentially the outline of a shape. OpenCV's `findContours` function extracts these boundaries, which can then be analysed for shape properties like area, perimeter, and position [^1][^5].
+A contour is the boundary of a connected region in a binary image this is essentially the outline of a shape. OpenCV's `findContours` function extracts these boundaries, which can then be analysed for shape properties like area, perimeter, and position [^1] [^5].
 
 ```python
 contours, _ = cv2.findContours(unscanned_regions, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -109,20 +109,9 @@ This gives the exact centre of each detected marker, which is then used as a ref
 ---
 
 ## References
-
 [^1]: G. Bradski and A. Kaehler, *Learning OpenCV: Computer Vision with the OpenCV Library*, O'Reilly Media, 2008.
-
-[^2]: OpenCV Documentation. “Changing Colorspaces.”  
-Available at: https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
-
-[^3]: OpenCV Documentation. “Smoothing Images (Image Filtering).”  
-Available at: https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
-
-[^4]: OpenCV Documentation. “Image Thresholding.”  
-Available at: https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
-
-[^5]: OpenCV Documentation. “Contour Features.”  
-Available at: https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html
-
-[^6]: OpenCV Documentation. “Image Moments.”  
-Available at: https://docs.opencv.org/4.x/d0/d49/tutorial_moments.html
+[^2]: OpenCV Documentation. “Changing Colorspaces.” Available at: https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
+[^3]: OpenCV Documentation. “Smoothing Images (Image Filtering).” Available at: https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
+[^4]: OpenCV Documentation. “Image Thresholding.” Available at: https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+[^5]: OpenCV Documentation. “Contour Features.” Available at: https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html
+[^6]: OpenCV Documentation. “Image Moments.” Available at: https://docs.opencv.org/4.x/d0/d49/tutorial_moments.html

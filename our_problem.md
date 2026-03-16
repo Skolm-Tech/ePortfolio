@@ -1,3 +1,9 @@
+---
+title: Our Problem
+layout: default
+nav_order: 2
+---
+
 # Laser Surface Scanning with Robotic Automation
 
 ## Our Problem

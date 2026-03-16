@@ -1,7 +1,7 @@
 ---
 title: Our Team
 layout: default
-nav_order: 0
+nav_order: 1
 ---
 
 # Who We Are

@@ -9,7 +9,8 @@ nav_order: 6
 
 This section includes documentation of all of our subsystem development, as shown below:
 
-* [Dot Detetction Development](./development/Dot%20Detection/dot_detection_development.md)
+* [Initial Hardware Research](./development/Project_Setup.md)
+* [Dot Detection Development](./development/Dot%20Detection/dot_detection_development.md)
 * [Screenshot and System Status Development](./development/Screenshot/get_screenshot_development.md)
 * [Missing Region Coverage Algorithm Development](./development/Coverage_algorithm.md)
 * [Robot Communications Development](./development/robot.md)

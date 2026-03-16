@@ -33,6 +33,6 @@ This project was developed by an engineering team working on robotics, computer 
   - [Robot Connection](./development/robot_connection.md)
   - [Trajectory Generation](./development/trajectory_generation.md)
   - [Dot Detection](./development/Dot%20Detection/dot_detection_development.md)
-    - [Documentation](./development/Dot%20Detection/dot_detection_development.md)
+    - [Documentation](./development/Dot%20Detection/dot_detection_documentation.md)
   - [Screenshot Development](./development/Screenshot/get_screenshot_development.md)
     - [Documentation](./development/Screenshot/get_screenshot_documentation.md)

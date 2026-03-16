@@ -17,7 +17,7 @@ The aim was to have each of the sub-systems designed and tested by this point. P
 **S2Wk1 – Start of Integration:** <br>
 This was seen as the point at which integration between the systems should begin. At this point most of the code sub-programs had been finished with the only minor reformatting required to put them together in the main program. The production of a working mount was delayed leading to a bottleneck on the full system testing. <br>
 **S2Wk6 – Current state:**<br>
-As of writing, the project is still in development with multiple major issues arising late into the verification of some sub-systems, due to constraints placed upon the project. <br>
+Sub-systems are fully developed, integration has stalled due to technical challenges arising. With further development time progress could still be made, with know workarounds to these issues. <br>
 
 ## Project Development
 

@@ -36,8 +36,8 @@ Our main other system involves using the robot as a client to connect to our sys
 ## Bibliography
 [^1]: Open Robotics, “ROS.org \| Powering the world’s robots,” Ros.org, 2020. https://www.ros.org/
 [^2]: “UniversalRobots/Universal_Robots_ROS_Driver,” GitHub, Jun. 08, 2021. https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
-[^3] “Modbus Server - 16377 \| Universal Robots Support,” Universal-robots.com, 2024. https://www.universal-robots.com/articles/ur/interface-communication/modbus-server/
-[^4] “Profinet Guide - 20596,” Universal-robots.com, 2025. https://www.universal-robots.com/articles/ur/interface-communication/profinet-how-to-guide-e-series/
-[^5] “OPC UA Client/Server,” Universal-robots.com, 2025. https://www.universal-robots.com/marketplace/products/01tP40000071NgaIAE/
-[^6] “Overview of client interfaces - 21744,” www.universal-robots.com. https://www.universal-robots.com/articles/ur/interface-communication/overview-of-client-interfaces/
-[^7] “Dashboard Server,” Universal-robots.com, 2026. https://www.universal-robots.com/developer/communication-protocol/dashboard-server/
+[^3]: “Modbus Server - 16377 \| Universal Robots Support,” Universal-robots.com, 2024. https://www.universal-robots.com/articles/ur/interface-communication/modbus-server/
+[^4]: “Profinet Guide - 20596,” Universal-robots.com, 2025. https://www.universal-robots.com/articles/ur/interface-communication/profinet-how-to-guide-e-series/
+[^5]: “OPC UA Client/Server,” Universal-robots.com, 2025. https://www.universal-robots.com/marketplace/products/01tP40000071NgaIAE/
+[^6]: “Overview of client interfaces - 21744,” www.universal-robots.com. https://www.universal-robots.com/articles/ur/interface-communication/overview-of-client-interfaces/
+[^7]: “Dashboard Server,” Universal-robots.com, 2026. https://www.universal-robots.com/developer/communication-protocol/dashboard-server/

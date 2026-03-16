@@ -23,12 +23,21 @@ UR series robots can also be connected to a variety of industrial protocols, inc
 
 ## Client Protocols
 
-The robots also supports a number of independent protocols[^6] such as the Dashboard Server, RTDE and others. These can be accessed directly using socket communication via the TCP protocol, allowing for the greatest flexibility of implementation. However they also are the least supported by third-party libraries and solutions, and as such should only be used when other solutions are not appropriate for the problem at hand.
+The robots also supports a number of independent protocols[^6] such as the Dashboard Server, RTDE and others. These can be accessed directly using socket communication via the TCP protocol, allowing for the greatest flexibility of implementation. However they also are the least supported by third-party libraries and solutions, and as such should only be used when other solutions are not appropriate for the problem at hand. In this case, these protocols are the best available solution as they work on the basis of TCP sockets, which are supported by all major operating systems, and as such offer maximum flexibility for the integration of our product with existing systems.
+
+### Dashboard Server
+
+The most essential part of any automation of a UR series robot is the Dashboard Server[^7]. This is a TCP server, and is the only way to interact with the robot's safety and control systems that start and stop the robot's program. Without this system, no full automation solution is possible, as the robot would still need to be powered on and started by a technician every time the system is run. In our solution the Dashboard server is integrated so that the entire automation solution can be started from our graphical user interface.
+
+### Robot TCP Client
+
+Our main other system involves using the robot as a client to connect to our system and pull data from it to control robot movements. This solution is very flexible and does not require any specific software or hardware to be available on the computer system used, unlike the more popular RTDE solution which requires real-time scheduling on the kernel for some functions.
 
 ## Bibliography
-[^1]: Open Robotics, “ROS.org \| Powering the world’s robots,” Ros.org, 2020. https://www.ros.org/ \[Accessed: 17-Feb-2025\]
-[^2]: “UniversalRobots/Universal_Robots_ROS_Driver,” GitHub, Jun. 08, 2021. https://github.com/UniversalRobots/Universal_Robots_ROS_Driver \[Accessed: 17-Feb-2025\]
-[^3] “Modbus Server - 16377 \| Universal Robots Support,” Universal-robots.com, 2024. https://www.universal-robots.com/articles/ur/interface-communication/modbus-server/ \[Accessed: 17-Feb-2025\]
-[^4] “Profinet Guide - 20596,” Universal-robots.com, 2025. https://www.universal-robots.com/articles/ur/interface-communication/profinet-how-to-guide-e-series/ \[Accessed: 17-Feb-2025\]
-[^5] “OPC UA Client/Server,” Universal-robots.com, 2025. https://www.universal-robots.com/marketplace/products/01tP40000071NgaIAE/ \[Accessed: 17-Feb-2025\]
-[^6] “Overview of client interfaces - 21744,” www.universal-robots.com. https://www.universal-robots.com/articles/ur/interface-communication/overview-of-client-interfaces/ \[Accessed: 17-Feb-2025\]
+[^1]: Open Robotics, “ROS.org \| Powering the world’s robots,” Ros.org, 2020. https://www.ros.org/
+[^2]: “UniversalRobots/Universal_Robots_ROS_Driver,” GitHub, Jun. 08, 2021. https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
+[^3] “Modbus Server - 16377 \| Universal Robots Support,” Universal-robots.com, 2024. https://www.universal-robots.com/articles/ur/interface-communication/modbus-server/
+[^4] “Profinet Guide - 20596,” Universal-robots.com, 2025. https://www.universal-robots.com/articles/ur/interface-communication/profinet-how-to-guide-e-series/
+[^5] “OPC UA Client/Server,” Universal-robots.com, 2025. https://www.universal-robots.com/marketplace/products/01tP40000071NgaIAE/
+[^6] “Overview of client interfaces - 21744,” www.universal-robots.com. https://www.universal-robots.com/articles/ur/interface-communication/overview-of-client-interfaces/
+[^7] “Dashboard Server,” Universal-robots.com, 2026. https://www.universal-robots.com/developer/communication-protocol/dashboard-server/

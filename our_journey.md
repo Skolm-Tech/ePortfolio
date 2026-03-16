@@ -1,5 +1,5 @@
 ---
-title: Our Problem
+title: Our Journey
 layout: default
 nav_order: 5
 ---

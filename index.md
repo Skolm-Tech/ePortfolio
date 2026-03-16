@@ -13,26 +13,18 @@ This project develops an autonoumous robot scanning system capable of detecting 
 ## Meet the Team
 This project was developed by an engineering team working on robotics, computer engineering, and electrical engineering. [Who we are](who-we-are.md)
 
-## 📚 Table of Contents
-- 🏠 [Systems Engineering Overview](./systems/index.md)
-  - [Aim and Objectives](./systems/objectives.md)
-  - [High-Level System Design](./systems/design.md)
-  - [Stakeholder Analysis](./systems/stakeholders.md)
+## Table of Contents
+- [Our Team](./who-we-are.md)
+- [Our Problem](./our_problem.md)
+- [Our Vision](./our_vision.md)
+- [Our Solution](./our_solution.md)
+- [Our Journey](./our_journey.md)
 
-- 🔬 [Research Overview](./research/index.md)
-  - [Robot](./research/robot.md)
-  - [Missing Region Detection Algorithm](./research/scan_gap_detection.md)
-
-- 🗺️ [Our Journey](./Our%20Journey/index.md)
-
-- ⚙️ [Development Overview](./development/index.md)
-  - [Missing Region Detection Algorithm](./development/Coverage_algorithm.md)
-  - [Problem Context](./development/ProblemContext.md)
-  - [Setup & Experimentation](./development/Project_Setup.md)
-  - [User Interface](./development/UserInterface.md)
-  - [Robot Connection](./development/robot_connection.md)
-  - [Trajectory Generation](./development/trajectory_generation.md)
-  - [Dot Detection](./development/Dot%20Detection/dot_detection_development.md)
-    - [Documentation](./development/Dot%20Detection/dot_detection_documentation.md)
-  - [Screenshot Development](./development/Screenshot/get_screenshot_development.md)
-    - [Documentation](./development/Screenshot/get_screenshot_documentation.md)
+- [Development Overview](./development/index.md)
+  - [Initial Hardware Research](./development/Project_Setup.md)
+  - [Dot Detection Development](./development/Dot%20Detection/dot_detection_development.md)
+  - [Screenshot and System Status Development](./development/Screenshot/get_screenshot_development.md)
+  - [Missing Region Coverage Algorithm Development](./development/Coverage_algorithm.md)
+  - [Robot Communications Development](./development/robot.md)
+  - [Trajectory Generation Development](./development/trajectory_generation.md)
+  - [User Interface Development](./development/UserInterface.md)

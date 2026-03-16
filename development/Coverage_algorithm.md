@@ -7,7 +7,7 @@ has_toc: true
 
 # Missing Region Detection Algorithm
 
-> 📖 For the research behind this algorithm, see the [Research](../research/scan_gap_detection)
+> 📖 For the research behind this algorithm, see the [Research](./scan_gap_detection_research.md)
 
 This algorithm is responsible for identifying incomplete scan regions during the scanning process. A screenshot of the scanning software is captured and processed using computer vision techniques to detect areas that have not been fully scanned.
 

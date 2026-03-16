@@ -88,9 +88,13 @@ System Disposers: Our system is intended as a replacement of an existing system,
 </tbody>
 </table>
 
-# Diagram of generic solution
+# Design diagram of generic solution
 
 ![Local image](./media/HLD_Skolm.png)
+
+# Sequence diagram of generic solution
+
+![Local image](./media/sequence_diagram.png)
 
 ## Bibliography
 [^1]: J. Dick, E. Hull, and K. Jackson, Requirements Engineering. Cham Springer, 2017.

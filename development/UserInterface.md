@@ -1,3 +1,9 @@
+---
+title: User Interface
+layout: default
+parent: Development Overview
+---
+
 # Remote Scanner Supervision Subsystem
 
 ## Web-Based User Interface

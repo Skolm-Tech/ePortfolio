@@ -2,7 +2,6 @@
 title: Remote Controlling the UR5e
 layout: default
 parent: Development Overview
-has_toc: true
 ---
 
 # Remote controlling Universal Robots industrial robot arms

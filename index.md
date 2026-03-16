@@ -20,6 +20,7 @@ This project was developed by an engineering team working on robotics, computer 
 - [Our Solution](./our_solution.md)
 - [Our Journey](./our_journey.md)
 
+
 - [Development Overview](./development/index.md)
   - [Initial Hardware Research](./development/Project_Setup.md)
   - [Dot Detection Development](./development/Dot%20Detection/dot_detection_development.md)

@@ -23,8 +23,13 @@ As of writing, the project is still in development with multiple major issues ar
 
 The following link to documentation that shows the development of each individual sub-system through requirement identification, research, and testing.
 
-* [Dot Detetction Development](../development/Dot%20Detection/dot_detection_development.md)
-* [Screenshot and System Status Development](../development/Screenshot/get_screenshot_development.md)
+* [Dot Detetction Development](./development/Dot%20Detection/dot_detection_development.md)
+* [Screenshot and System Status Development](./development/Screenshot/get_screenshot_development.md)
+* [Missing Region Coverage Algorithm Development](./development/Coverage_algorithm.md)
+* [Robot Communications Development](./development/robot.md)
+* [Trajectory Generation Development](./development/trajectory_generation.md)
+* [User Interface Development](./development/UserInterface.md)
+
 
 ## Additional Challenges
 

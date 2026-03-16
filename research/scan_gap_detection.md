@@ -110,17 +110,17 @@ This gives the exact centre of each detected marker, which is then used as a ref
 
 ## References
 
-[1]: G. Bradski and A. Kaehler, *Learning OpenCV: Computer Vision with the OpenCV Library*, O'Reilly Media, 2008.    
-• [1.1] Chapter 3 — Getting to know OpenCV  
-• [1.2] Chapter 5 — Image Processing  
-• [1.3] Chapter 8 — Contours
-[2]: OpenCV Documentation — Colour Space Conversion.  
+[1] G. Bradski and A. Kaehler, *Learning OpenCV: Computer Vision with the OpenCV Library*, O'Reilly Media, 2008.    
+[1.1] Chapter 3 — Getting to know OpenCV 
+[1.2] Chapter 5 — Image Processing  
+[1.3] Chapter 8 — Contours
+[2] OpenCV Documentation — Colour Space Conversion.  
 https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
-[3]: OpenCV Documentation — Image Filtering.  
+[3] OpenCV Documentation — Image Filtering.  
 https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
-[4]: OpenCV Documentation — Image Thresholding.  
+[4] OpenCV Documentation — Image Thresholding.  
 https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
-[5]: OpenCV Documentation — Contour Features.  
+[5] OpenCV Documentation — Contour Features.  
 https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html
-[6]: OpenCV Documentation — Image Moments.  
+[6] OpenCV Documentation — Image Moments.  
 https://docs.opencv.org/4.x/d0/d49/tutorial_moments.html

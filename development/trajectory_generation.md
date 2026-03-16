@@ -70,7 +70,7 @@ Once the pose is generated it is checked if it is to far from the previous pose 
 ## Bibliography
 [^1]: “Reconstruction in OpenCV.” Accessed: Dec. 11, 2025. [Online]. Available: https://www.opencvhelp.org/tutorials/advanced/reconstruction-opencv/
 
-[^2]: “Calculate X, Y, Z Real World Coordinates from Image Coordinates using OpenCV (from fdxlabs) | by Paco Garcia | Medium.” Accessed: Jan. 11, 2026. [Online]. Available: https://medium.com/@pacogarcia3/calculate-x-y-z-real-world-coordinates-from-image-coordinates-using-opencv-from-fdxlabs-0adf0ec37cef
+[^2]: “Calculate X, Y, Z Real World Coordinates from Image Coordinates using OpenCV (from fdxlabs) \| by Paco Garcia \| Medium.” Accessed: Jan. 11, 2026. [Online]. Available: https://medium.com/@pacogarcia3/calculate-x-y-z-real-world-coordinates-from-image-coordinates-using-opencv-from-fdxlabs-0adf0ec37cef
 
 [^3]: “geometry - Find shortest distance between lines in 3D - Mathematics Stack Exchange.” Accessed: Feb. 18, 2026. [Online]. Available: https://math.stackexchange.com/questions/2213165/find-shortest-distance-between-lines-in-3d
 

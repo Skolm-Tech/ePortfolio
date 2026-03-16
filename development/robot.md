@@ -1,11 +1,10 @@
 ---
-title: UR5e Robot Arm
+title: Remote Controlling the UR5e
 layout: default
-parent: Research Overview
-has_toc: true
+parent: Development Overview
 ---
 
-> **Important:** The robot listed on this page is the robot we expect this system to be using in production. Testing will be done on a UR5 CB3, which is an older version of the UR5e with minor differences.
+> **Important:** The robot listed on this page is the robot we expect this system to be using in production. Testing will be done on various UR robots, which can have minor differences to the final product.
 {: .important }
 
 # Universal Robots UR5e Collaborative Industrial Robot Arm
@@ -37,6 +36,26 @@ While the robot supports multiple different industrial protocols such as Modbus 
 
 The robot also exposes a series of interfaces that can be connected to directly using server sockets. These are the primary and secondary interfaces as well as the real time data exchange (RTDE) interface which replaces the older deprecated real-time interface, all of which handle data exchange via registers. The robot can also be controlled through the dashboard server socket, sent commands through the URScript interpreter socket and can interface with external functions and methods through an XML-RPC socket[^8]. All of these can be used in parallel with each other, as each has different functions. For a complete remote control system the Dashboard Server socket must be used as this is the only interface by which the robot's power and safety state can be managed as well as internal programs loaded and started [^9]. From there, different sockets present good options depending on how program control flows between different subsystems. If a solution is desired in which the robot has zero part in the control flow, the Interpreter Mode socket[^10] can be used to control the robot without needing to program anything on the robot beyond a dummy program that sets the robot into "Interpreter Mode". From there all commands are passed to the robot directly through this socket. In the reverse, to maximise control flow on the robot the XML-RPC socket can be used, where instead the robot can remotely call functions from an external program[^11] fully from within an internal control flow. The primary, secondary and real-time/RTDE interfaces meanwhile are used for data exchange and would involve a shared control flow between the robot and a program running on the other end of the Ethernet connection[^12].
 
+## ROS/ROS2
+
+The Robotics Operating System (ROS/ROS2) is one of the most popular ways to externally control Univesal Robots. It is a open-source framework for middleware to interface between different robot controllers, sensors, industrial machines and computers[^1]. Due to its popularity and support provided by the Universal Robots team[^2] there is a very mature ecosystem for controlling Universal Robots industrial robot arms through ROS, including I/O control, obstacle-avoidant path planning, real-time feedback and other features.
+
+The main drawback of the UR ROS/ROS2 driver however is that it is only compatible with specific distributions of GNU/Linux. While these can be containerised fairly well, the other software that is required for this project cannot be run in Linux or easily containerised as it is not intended to be compatible with virtualisation and requires both specific hardware acceleration and I/O access, and is also legacy software with no available English language support.
+
+As a result while ROS could be used to control the robot, this would not solve the connectivity issue between the robot and the software running on the scanner computer, as another communication link would need to be established either between two separate machines or between a containerised ROS and the host machine. Due to the high complexity of such a solution and the lack of software engineering experience within the team this option was subsequently discarded.
+
+# What have we used?
+
+We have decided to use the client interfaces as these can be accessed using a TCP client/server architecture, which is implemented in every major operating systems and as such places no limitations on our hardware or software, while still allowing us to access the robot's full functions. This does place a greater development workload on our team however as these interfaces are not as well supported by third-party libraries outside of their integration into the ROS/ROS2 driver.
+
+### Dashboard Server
+
+The most essential part of any automation of a UR series robot is the Dashboard Server[^9]. This is a TCP server, and is the only way to interact with the robot's safety and control systems that start and stop the robot's program. Without this system, no full automation solution is possible, as the robot would still need to be powered on and started by a technician every time the system is run. In our solution the Dashboard server is integrated so that the entire automation solution can be started from our graphical user interface.
+
+### Robot TCP Client
+
+Our main other system involves using the robot as a client to connect to our system and pull data from it to control robot movements. This solution is very flexible and does not require any specific software or hardware to be available on the computer system used, unlike the more popular RTDE solution which requires real-time scheduling on the kernel for some functions.
+
 ## Bibliography
 [^1]: International Federation of Robotics (IFR), Demystifying Collaborative Industrial Robots – Positioning Paper, updated December 2020. Available: https://www.automate-uk.com/media/4jmhne5p/ifrdemystifyingcollaborativerobotsupdatev03dec2020.pdf \[Accessed: 03-Nov-2025\]
 [^2]: Universal Robots A/S, UR5e – User Manual (Original Instructions), e-Series, 2009–2024. [Online]. Available: https://www.universal-robots.com/manuals/EN/PDF/SW5_19/user-manual-UR5e-PDF_online/710-965-00_UR5e_User_Manual_en_Global.pdf \[Accessed: 03-Nov-2025\]
@@ -50,3 +69,5 @@ The robot also exposes a series of interfaces that can be connected to directly 
 [^10]: "UR Script Interpreter mode", Universal-robots.com, 2025. https://www.universal-robots.com/articles/ur/programming/interpreter-mode/ \[Accessed: 30-Dec-2025\]
 [^11]: “XML-RPC communication - 16326,” www.universal-robots.com. https://www.universal-robots.com/articles/ur/interface-communication/xml-rpc-communication/ \[Accessed: 30-Dec-2025\]
 [^12]: “Remote Control Via TCP/IP - 16496,” www.universal-robots.com. https://www.universal-robots.com/articles/ur/interface-communication/remote-control-via-tcpip/ \[Accessed: 30-Dec-2025\]
+[^13]: Open Robotics, “ROS.org \| Powering the world’s robots,” Ros.org, 2020. https://www.ros.org/ \[Accessed: 17-Feb-2025\]
+[^14]: “UniversalRobots/Universal_Robots_ROS_Driver,” GitHub, Jun. 08, 2021. https://github.com/UniversalRobots/Universal_Robots_ROS_Driver \[Accessed: 17-Feb-2025\]

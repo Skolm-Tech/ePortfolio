@@ -6,7 +6,7 @@ nav_order: 1
 
 # Who We Are
 
-We are a team of students working together to develop an automated 3D scanning system, combining robotics, computer vision, and software engineering.
+We are SKØLM Tech, a team of engineers dedicated to revolutionising 3D scanning automation with our flagship product SKØLMScan, a fully automated laser surface scanning solution using collaborative industrial robots.
 
 ---
 

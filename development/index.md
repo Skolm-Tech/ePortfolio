@@ -11,8 +11,8 @@ has_toc: false
 This section includes documentation of all of our subsystem development, as shown below:
 
 * [Initial Hardware Research](./development/Project_Setup.md)
-* [Dot Detection Development](./development/Dot%20Detection/dot_detection_development.md)
-* [Screenshot and System Status Development](./development/Screenshot/get_screenshot_development.md)
+* [Dot Detection Development](./development/dot_detection_development.md)
+* [Screenshot and System Status Development](./development/get_screenshot_development.md)
 * [Missing Region Coverage Algorithm Development](./development/Coverage_algorithm.md)
 * [Robot Communications Development](./development/robot.md)
 * [Trajectory Generation Development](./development/trajectory_generation.md)

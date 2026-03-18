@@ -23,8 +23,9 @@ Sub-systems are fully developed, integration has stalled due to technical challe
 
 The following link to documentation that shows the development of each individual sub-system through requirement identification, research, and testing.
 
-* [Dot Detetction Development](./development/dot_detection/dot_detection_development.md)
-* [Screenshot and System Status Development](./development/screenshot/get_screenshot_development.md)
+* [Initial Hardware Research](./development/Project_Setup.md)
+* [Dot Detection Development](./development/dot_detection_development.md)
+* [Screenshot and System Status Development](./development/get_screenshot_development.md)
 * [Missing Region Coverage Algorithm Development](./development/Coverage_algorithm.md)
 * [Robot Communications Development](./development/robot.md)
 * [Trajectory Generation Development](./development/trajectory_generation.md)
